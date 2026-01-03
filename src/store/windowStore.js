@@ -1,8 +1,8 @@
 import { INITIAL_Z_INDEX, WINDOW_CONFIG } from "#constants";
-import { Immer } from "immer";
+import { immer } from "zustand/middleware/immer";
 import { create } from "zustand";
 
-const useWindowStore = create(Immer((set)=>({
+const useWindowStore = create(immer((set)=>({
     window:WINDOW_CONFIG,
     nextZIndex:INITIAL_Z_INDEX + 1,
     openWindow:(windowKey,data=null)=>set((state)=>{
