@@ -3,9 +3,12 @@ import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { useRef } from "react"
 import { Tooltip } from "react-tooltip"
+import useWindowStore from "#store/windowStore"
 
 const Dock = () => {
+    const { openWindow, focusWindow, window, closeWindow } = useWindowStore()
     const dockRef = useRef(null)
+
     useGSAP(() => {
         const dock = dockRef.current;
         if (!dock) return;
@@ -53,7 +56,21 @@ const Dock = () => {
             dock.removeEventListener("mouseleave", resetIcons)
         }
     }, [])
-    const toggleApp = (app) => { }
+    const toggleApp = (app) => { 
+        if(!app.canOpen) return;
+
+        const win = window[app.id];
+        if(!win){
+            console.warn(`No window configuration found for app id: ${app.id}`);
+            return;
+        }
+        if (win.isOpen) {
+            closeWindow(app.id);
+        } else {
+            openWindow(app.id);
+     }
+
+    }
     return (
         <section id="dock">
             <div ref={dockRef} className="dock-container">
