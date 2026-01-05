@@ -1,6 +1,7 @@
 import Dock from "#components/Dock"
 import NavBar from "#components/NavBar"
 import Welcome from "#components/Welcome"
+import Safari from "#windows/Safari"
 import Terminal from "#windows/Terminal"
 import gsap from "gsap"
 import { Draggable } from "gsap/Draggable"
@@ -13,6 +14,7 @@ const App =()=>{
       <Welcome/>
       <Dock/>
       <Terminal/>
+      <Safari/>
     </main>
   )
 }
