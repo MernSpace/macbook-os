@@ -1,6 +1,7 @@
 import Dock from "#components/Dock"
 import NavBar from "#components/NavBar"
 import Welcome from "#components/Welcome"
+import Resume from "#windows/Resume"
 import Safari from "#windows/Safari"
 import Terminal from "#windows/Terminal"
 import gsap from "gsap"
@@ -15,6 +16,7 @@ const App =()=>{
       <Dock/>
       <Terminal/>
       <Safari/>
+      <Resume/>
     </main>
   )
 }
