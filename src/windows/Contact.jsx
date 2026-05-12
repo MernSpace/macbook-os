@@ -10,7 +10,7 @@ const Contact = () => {
             <h2>Contact Me</h2>
         </div>
         <div className="p-5 space-y-5">
-            <img src="https://dummyjson.com/image/150" alt="Contact" className="w-20 rounded-full" />
+            <img src="/images/sifat.png" alt="Contact" className="w-20 rounded-full" />
             <h3>Let's connect!</h3>
             <p>Get in touch with me through email or social media.</p>
             <p>sifat355y@gmail.com</p>

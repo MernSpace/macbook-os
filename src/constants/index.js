@@ -106,7 +106,7 @@ const techStack = [
   },
   {
     category: "Mobile",
-    items: ["React Native", "Expo","Flutter"],
+    items: ["React Native", "Expo", "Flutter"],
   },
   {
     category: "Styling",
@@ -132,28 +132,28 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/mernspace",
   },
   {
     id: 2,
     text: "Platform",
     icon: "/icons/atom.svg",
     bg: "#4bcb63",
-    link: "https://jsmastery.com/",
+    link: "https://saharul-sifat.vercel.app/",
   },
   {
     id: 3,
     text: "Twitter/X",
     icon: "/icons/twitter.svg",
     bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    link: "https://saharul-sifat.vercel.app/",
   },
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/saharulsifat/",
   },
 ];
 
@@ -397,7 +397,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "/images/sifat.png",
     },
     {
       id: 2,
@@ -406,7 +406,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
+      imageUrl: "/images/sifat-2.png",
     },
     {
       id: 3,
@@ -415,7 +415,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/sifat-3.png",
     },
     {
       id: 4,
@@ -425,14 +425,15 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      image: "/images/sifat.png",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
-      ],
-    },
+    "Hey! I’m Saharul 👋, a full-stack developer who loves building modern, interactive web applications that are both functional and visually clean.",
+    "I specialize in JavaScript, React, Next.js, Node.js, and the MERN stack—and I enjoy turning ideas into smooth, fast, real-world products people actually enjoy using.",
+    "I’m passionate about clean UI, intuitive UX, scalable backend architecture, and writing code that stays maintainable instead of becoming a debugging nightmare later on.",
+    "From real-time chat systems and collaborative apps to ride-sharing platforms and secure authentication systems, I enjoy working on projects that challenge me to think creatively and solve real problems.",
+    "Outside of coding, you’ll probably find me refining designs late at night, experimenting with new tech stacks, planning startup ideas, or convincing myself I definitely need another gadget for my setup 😅"
+  ]
+},
   ],
 };
 
@@ -450,7 +451,7 @@ const RESUME_LOCATION = {
       kind: "file",
       fileType: "pdf",
       // you can add `href` if you want to open a hosted resume
-      // href: "/your/resume/path.pdf",
+      href: "/files/resume.pdf",
     },
   ],
 };
